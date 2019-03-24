@@ -1,0 +1,10 @@
+from flask import Flask
+
+app = Flask(__name__) # name to tell app to know its location
+
+@app.route("/") # neu nguoi dung vao trang chu thi goi ham homepage duoi day
+def homepage():  #binding, view 'function'
+    return "Hello World, this flask homepage"
+
+if __name__ == "__main__":
+    app.run(debug=True)  # sua code luu vao tu chay

@@ -1,0 +1,18 @@
+input {
+    position: absolute;
+    left: 4cm;
+    height: 1.6cm;
+    width: 6cm
+}
+
+button {
+    position: absolute;
+    left: 4cm;
+    color: red;
+    width: 2cm;
+    height: 1cm;
+    font-size: 10px
+}
+label {
+    color: blue
+}

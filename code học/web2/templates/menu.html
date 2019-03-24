@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hello {{ session["token"] }}</h2>
+    {% for food in food_list %}
+        <h5>{{ food.title }}</h5>
+        <img src="{{ food.link }}" alt="{{ food.title }}">
+        <a href="/food/{{ food.id }}">See more</a>
+    {% endfor %}
+
+</body>
+</html>
